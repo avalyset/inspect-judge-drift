@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: inspect-judge-drift
+abstract: "Measure LLM-judge verdict drift across model versions by re-grading a stored Inspect eval log with two graders over the same samples, isolating the judge model as the only variable."
+type: software
+authors:
+  - given-names: Eirik
+    family-names: Botten Nicolaysen
+    orcid: "https://orcid.org/0009-0001-9188-6788"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/avalyset/inspect-judge-drift"
+url: "https://github.com/avalyset/inspect-judge-drift"
+keywords:
+  - inspect_ai
+  - evaluation
+  - llm-judge
+  - judge-drift
+  - reliability
+  - reproducibility
+date-released: "2026-06-30"

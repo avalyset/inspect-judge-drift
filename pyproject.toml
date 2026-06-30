@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inspect-judge-drift"
+version = "0.1.0"
+description = "Measure LLM-judge verdict drift across model versions by re-grading a stored Inspect eval log with two graders over the same samples."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "avalyset" }]
+keywords = ["inspect_ai", "evaluation", "llm-judge", "judge-drift", "reliability", "reproducibility"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["inspect_ai"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/avalyset/inspect-judge-drift"
+Repository = "https://github.com/avalyset/inspect-judge-drift"
+Issues = "https://github.com/avalyset/inspect-judge-drift/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["inspect_judge_drift"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "inspect_judge_drift",
+    "tests",
+    "README.md",
+    "LICENSE",
+    "pyproject.toml",
+]
