@@ -1,5 +1,7 @@
 # inspect-judge-drift
 
+[![ci](https://github.com/avalyset/inspect-judge-drift/actions/workflows/ci.yml/badge.svg)](https://github.com/avalyset/inspect-judge-drift/actions/workflows/ci.yml)
+
 Measure **LLM-judge verdict drift across model versions** for
 [Inspect AI](https://inspect.aisi.org.uk/).
 
